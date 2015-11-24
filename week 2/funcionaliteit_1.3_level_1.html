@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functionaliteit 1.3 level 1</title>
+</head>
+<body>
+	<!-- javascript code -->
+	<script>
+	var gebruikersnaam
+	var wachtwoord
+
+		gebruikersnaam = prompt("Gebruikersnaam?");
+		wachtwoord = prompt("Wachtwoord?");
+
+		if (gebruikersnaam != "haraldpouwels" && wachtwoord =="wachtwoord"){
+			alert("Verkeerde gebruikersnaam");
+		}
+
+		else if (gebruikersnaam == "haraldpouwels" && wachtwoord != "wachtwoord"){
+			wachtwoord = prompt("Verkeer wachtwoord, voer het juiste wachtwoord in.")
+
+			if (gebruikersnaam == "haraldpouwels" && wachtwoord != "wachtwoord") {
+				wachtwoord = prompt("Verkeer wachtwoord, voer het juiste wachtwoord in.")
+			};
+			
+			/*else geeft een foutmelding aan?? Waarom?????
+			else{
+			alert("Verkeerd gebruikersnaam en wachtwoord!")
+		} */
+
+		}
+			
+		else if(gebruikersnaam == "haraldpouwels" && wachtwoord == "wachtwoord"){
+			alert("U bent ingelogd!");
+		}
+
+		else{
+			alert("Verkeerd gebruikersnaam en wachtwoord!")
+		}
+	</script>
+</body>
+</html>
